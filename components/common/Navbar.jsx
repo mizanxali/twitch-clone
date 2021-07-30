@@ -9,7 +9,7 @@ import logo from '../../public/twitch-logo.png'
 
 const Navbar = () => {
     return (
-        <div className='flex flex-row justify-between items-center h-14 bg-gray-darker text-white px-6'>
+        <div className='flex flex-row justify-between items-center h-14 bg-gray-darker text-white px-2'>
             <span className='flex flex-row justify-start items-center'>
                 <Image
                     src={logo}

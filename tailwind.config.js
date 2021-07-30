@@ -13,6 +13,7 @@ module.exports = {
         light: '#1f1f23',
         lighter: '#3a3b3c',
         lightest: '#464748',
+        mute: '#BEBEBE'
       }
     }
   },
