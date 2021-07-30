@@ -1,49 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const SideDrawer = () => {
 
-    const followedChannels = [
-        {
-            title: 'sinatraa',
-            subtitle: 'VALORANT',
-            viewers: '13.2K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1340001054373552128/tA6yFDBW_400x400.jpg'
-        },
-        {
-            title: 'WARDELL',
-            subtitle: 'VALORANT',
-            viewers: '9.9K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1334300086189305857/var1pwN6_400x400.jpg'
-        },
-        {
-            title: 'pokimane',
-            subtitle: 'Just Chatting',
-            viewers: '6.8K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1412683540106334217/oI91U-qO_400x400.jpg'
-        }
-    ]
+    const [followedChannels, setFollowedChannels] = useState([])
+    const [recommendedChannels, setRecommendedChannels] = useState([])
 
-    const recommendedChannels = [
-        {
-            title: 'sinatraa',
-            subtitle: 'VALORANT',
-            viewers: '13.2K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1340001054373552128/tA6yFDBW_400x400.jpg'
-        },
-        {
-            title: 'WARDELL',
-            subtitle: 'VALORANT',
-            viewers: '9.9K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1334300086189305857/var1pwN6_400x400.jpg'
-        },
-        {
-            title: 'pokimane',
-            subtitle: 'Just Chatting',
-            viewers: '6.8K',
-            imageURL: 'https://pbs.twimg.com/profile_images/1412683540106334217/oI91U-qO_400x400.jpg'
-        }
-    ]
+    useEffect(() => {
+        import('../../data/channels.json').then((data) => setFollowedChannels(data.default.followedChannels))
+        import('../../data/channels.json').then((data) => setRecommendedChannels(data.default.recommendedChannels))
+    }, [])
 
     return (
         <div className='text-white w-60 bg-gray-light py-2 h-full'>
