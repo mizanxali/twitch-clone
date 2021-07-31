@@ -60,7 +60,7 @@ const CollapsedSideDrawer = (props) => {
 
 const ExpandedSideDrawer = (props) => {
     return (
-        <div className='text-white w-60 bg-gray-light py-2 h-full'>
+        <div className='text-white w-72 bg-gray-light py-2 h-full'>
             <div className='flex justify-between items-center pl-2 pr-3 my-2'>
                 <h1 className='text-sm uppercase font-semibold'>Followed Channels</h1>
                 <BsArrowBarLeft className='text-xl cursor-pointer' onClick={() => props.setDrawerCollapsed(true)} />
