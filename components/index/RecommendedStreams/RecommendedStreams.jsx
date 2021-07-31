@@ -12,10 +12,10 @@ const RecommendedStreams = () => {
     }, [])
 
     return (
-        <div className='m-4 p-4'>
+        <div className='mx-4 mt-4 p-4'>
             <h1 className='text-white font-semibold text-lg'>Live channels we think you’ll like</h1>
             <StreamsRow streams={recommendedStreams.slice(0, 4)} />
-            {!showMore && <p className='my-4 text-purple text-xs text-center cursor-pointer' onClick={() => setShowMore(true)}>Show More</p>}
+            {!showMore && <p className='mt-4 text-purple text-xs text-center cursor-pointer' onClick={() => setShowMore(true)}>Show More</p>}
             {showMore && <StreamsRow streams={recommendedStreams.slice(4, 8)} />}
         </div>
     )

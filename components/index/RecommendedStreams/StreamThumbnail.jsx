@@ -19,8 +19,7 @@ const StreamThumbnail = (props) => {
                     <h3 className='text-xs text-gray-mute'>{props.stream.channel}</h3>
                     <h3 className='text-xs text-gray-mute'>{props.stream.content}</h3>
                     <div className='my-1 flex flex-wrap'>
-                        <span className='text-2xs bg-gray-lightest px-3 py-0.5 rounded-full text-gray-mute font-semibold my-0.5 mx-0.5'>Esports</span>
-                        <span className='text-2xs bg-gray-lightest px-3 py-0.5 rounded-full text-gray-mute font-semibold my-0.5 mx-0.5'>English</span>
+                        {props.stream.tags.map(tag => <span className='text-3xs bg-gray-lightest px-3 py-0.5 rounded-full text-gray-mute font-semibold my-0.5 mx-0.5'>{tag}</span>)}
                     </div>
                 </div>
             </div>

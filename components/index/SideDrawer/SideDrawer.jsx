@@ -35,7 +35,7 @@ const SideDrawer = () => {
 
 const CollapsedSideDrawer = (props) => {
     return (
-        <div className='text-white w-12 bg-gray-light py-2 h-full text-center'>
+        <div className='text-white w-12 bg-gray-light py-2 h-full text-center overflow-auto'>
             <BsArrowBarRight className='text-xl cursor-pointer mx-auto mt-1 mb-6' onClick={() => props.setDrawerCollapsed(false)} />
             <CgHeart className='text-xl mx-auto my-3 text-gray-mute' />
             {props.followedChannels.map(channel => (
@@ -60,7 +60,7 @@ const CollapsedSideDrawer = (props) => {
 
 const ExpandedSideDrawer = (props) => {
     return (
-        <div className='text-white w-72 bg-gray-light py-2 h-full'>
+        <div className='text-white w-72 bg-gray-light py-2 h-full overflow-auto'>
             <div className='flex justify-between items-center pl-2 pr-3 my-2'>
                 <h1 className='text-sm uppercase font-semibold'>Followed Channels</h1>
                 <BsArrowBarLeft className='text-xl cursor-pointer' onClick={() => props.setDrawerCollapsed(true)} />
