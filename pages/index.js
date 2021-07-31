@@ -1,12 +1,12 @@
-import Navbar from "../components/common/Navbar"
-import SideDrawer from "../components/index/SideDrawer"
+import Navbar from '../components/common/Navbar'
+import SideDrawer from '../components/index/SideDrawer/SideDrawer'
 
 export default function Home() {
-  return (
-    <div>
-      <Navbar />
-      <SideDrawer />
-      <style global jsx>{`
+	return (
+		<div>
+			<Navbar />
+			<SideDrawer />
+			<style global jsx>{`
         html,
         body,
         body > div:first-child,
@@ -15,6 +15,6 @@ export default function Home() {
           height: 100%;
         }
       `}</style>
-    </div>
-  )
+		</div>
+	)
 }

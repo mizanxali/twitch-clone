@@ -1,38 +1,44 @@
 {
     "followedChannels": [
         {
+            "isLive": true,
             "title": "sinatraa",
             "subtitle": "VALORANT",
             "viewers": "13.2K",
             "imageURL": "https://pbs.twimg.com/profile_images/1340001054373552128/tA6yFDBW_400x400.jpg"
         },
         {
+            "isLive": true,
             "title": "Tfue",
             "subtitle": "Fortnite",
             "viewers": "6.8K",
             "imageURL": "https://pbs.twimg.com/profile_images/1234540362070478850/enLVtBuZ_400x400.jpg"
         },
         {
+            "isLive": false,
             "title": "WARDELL",
             "subtitle": "3 new videos",
-            "viewers": "Offline",
+            "viewers": null,
             "imageURL": "https://pbs.twimg.com/profile_images/1334300086189305857/var1pwN6_400x400.jpg"
         }
     ],
     "recommendedChannels": [
         {
+            "isLive": true,
             "title": "pokimane",
             "subtitle": "Just Chatting",
             "viewers": "16.8K",
             "imageURL": "https://pbs.twimg.com/profile_images/1412683540106334217/oI91U-qO_400x400.jpg"
         },
         {
+            "isLive": true,
             "title": "tommyinnit",
             "subtitle": "Minecraft",
             "viewers": "12.3K",
             "imageURL": "https://pbs.twimg.com/profile_images/1223403686174625794/eRAObFzC_400x400.jpg"
         },
         {
+            "isLive": true,
             "title": "AverageJonas",
             "subtitle": "VALORANT",
             "viewers": "4.5K",

@@ -4,6 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      red: '#E91916',
       purple: '#A970FF',
       white: '#fff',
       gray: {
@@ -15,7 +16,10 @@ module.exports = {
         lightest: '#464748',
         mute: '#BEBEBE'
       }
-    }
+    },
+    fontFamily: {
+      'inter': ['Inter', 'sans-serif']
+    },
   },
   variants: {
     extend: {},
